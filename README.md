@@ -63,10 +63,10 @@
 Ниже описан алгоритм для Linux/macOS (Windows работает аналогично, если установлен Qt и CMake):
 
 1. **Клонируйте репозиторий** (или просто скопируйте папку проекта).
-![ ](screenshots/01/clone.png)
+![ ](screenshots/clone.png)
 
 2. **make build && make run**
-![ ](screenshots/01/build.png)
+![ ](screenshots/build.png)
 
 3. **Запустите приложение и добавьте задачу**
-![ ](screenshots/01/app.png)
+![ ](screenshots/app.png)
