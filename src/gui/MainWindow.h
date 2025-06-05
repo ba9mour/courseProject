@@ -1,37 +1,37 @@
 #pragma once
 
-#include <QMainWindow>
-#include <QListWidget>
-#include <QPushButton>
-#include <QVBoxLayout>
+#include "../headers/TaskManager.h"
 #include <QHBoxLayout>
 #include <QInputDialog>
+#include <QListWidget>
+#include <QMainWindow>
 #include <QMessageBox>
-#include "../headers/TaskManager.h"
+#include <QPushButton>
+#include <QVBoxLayout>
 
 class MainWindow : public QMainWindow {
-    Q_OBJECT
+  Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget* parent = nullptr);
+  explicit MainWindow(QWidget *parent = nullptr);
 
 private slots:
-    void onAddTask();
-    void onRemoveTask();
-    void onEditTask();
-    void onSaveTasks();
-    void onLoadTasks();
+  void onAddTask();
+  void onRemoveTask();
+  void onEditTask();
+  void onSaveTasks();
+  void onLoadTasks();
 
 private:
-    void refreshList();
+  void refreshList();
 
-    TaskManager manager_;
-    const std::string defaultFilename_ = "tasks.json";
+  TaskManager manager_;
+  const std::string defaultFilename_ = "tasks.json";
 
-    QListWidget* taskList_;
-    QPushButton* addBtn_;
-    QPushButton* removeBtn_;
-    QPushButton* editBtn_;
-    QPushButton* saveBtn_;
-    QPushButton* loadBtn_;
+  QListWidget *taskList_;
+  QPushButton *addBtn_;
+  QPushButton *removeBtn_;
+  QPushButton *editBtn_;
+  QPushButton *saveBtn_;
+  QPushButton *loadBtn_;
 };
